@@ -142,7 +142,6 @@ public class LevelManager {
         String allCollectibles = sh.getString(levelRef + "_all_collectibles", "NotAll");
         String noHit = sh.getString(levelRef + "_no_hit", "Hit");
 
-        Log.d("SHARED_PREF_RESULTS", "\n" + clear + "\n" + allCollectibles + "\n" + noHit);
     }
 
     /**
@@ -297,33 +296,29 @@ public class LevelManager {
         int i = 0;
         for (GameObject go : this.enemyList) {
             PositionComponent pc = (PositionComponent) go.getComponent(ComponentTypeEnum.POSITION);
-            Log.d(String.format("Enemy %d", i), String.valueOf(pc.getLane()));
-            Log.d(String.format("Enemy %d", i), String.valueOf(pc.getRow()));
+
             i++;
         }
         i = 0;
 
         for (GameObject go : this.bonusList) {
             PositionComponent pc = (PositionComponent) go.getComponent(ComponentTypeEnum.POSITION);
-            Log.d(String.format("Bonus %d", i), String.valueOf(pc.getLane()));
-            Log.d(String.format("Bonus %d", i), String.valueOf(pc.getRow()));
+
             i++;
         }
         i = 0;
 
         for (GameObject go : this.colleList) {
             PositionComponent pc = (PositionComponent) go.getComponent(ComponentTypeEnum.POSITION);
-            Log.d(String.format("Colle %d", i), String.valueOf(pc.getLane()));
-            Log.d(String.format("Colle %d", i), String.valueOf(pc.getRow()));
+
             i++;
         }
         for (GameObject go : this.bonusList) {
             PositionComponent pc = (PositionComponent) go.getComponent(ComponentTypeEnum.POSITION);
-            Log.d(String.format("Colle %d", i), String.valueOf(pc.getLane()));
-            Log.d(String.format("Colle %d", i), String.valueOf(pc.getRow()));
+
             i++;
         }
-        Log.d("Boss", boss.toString());
+
     }
 
     /**

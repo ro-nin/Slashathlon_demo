@@ -62,7 +62,6 @@ public class PRGameScreen extends Screen {
         frameBufferHeight = game.getGraphics().getHeight();
         frameBufferWidth = game.getGraphics().getWidth();
 
-        Log.d("FRAME_SIZE", "FBH:" + frameBufferHeight + ", FBW: " + frameBufferWidth);
         //init level manager
         lm = game.getLevelManager();
         lm.loadLevel(level);
@@ -200,10 +199,8 @@ public class PRGameScreen extends Screen {
                 if (event.x > startingX && swipingRight) {
                     startingX = event.x;
                     startingY = event.y;
-                    Log.d("SWIPE_NEW", "Continuing Right: " + event.x);
 
                     if (event.x > startingSwipeTouchDown.x + SWIPE_END_THRESHOLD) {
-                        Log.d("SWIPE_NEW", "SWIPE Right CONFIRMED at: " + event.x + ", " + event.y);
 
                         makeSwipe(startingSwipeTouchDown.x, ObjectStateEnum.SWIPING_RIGHT);
                         swipingLeft = false;
@@ -213,11 +210,9 @@ public class PRGameScreen extends Screen {
                 } else if (event.x < startingX && swipingLeft) {
                     startingX = event.x;
                     startingY = event.y;
-                    Log.d("SWIPE_NEW", "Continuing Left" + event.x + ", " + event.y);
 
                     if (event.x + SWIPE_END_THRESHOLD < startingSwipeTouchDown.x) {
                         //swipeleft
-                        Log.d("SWIPE_NEW", "SWIPE LEFT CONFIRMED at: " + event.x + ", " + event.y);
 
                         makeSwipe(startingSwipeTouchDown.x, ObjectStateEnum.SWIPING_LEFT);
                         swipingLeft = false;
@@ -247,7 +242,6 @@ public class PRGameScreen extends Screen {
                         startingY = event.y;
                         swipingRight = true;
                         swipingLeft = true;
-                        Log.d("SWIPE_NEW", "STARTING SWIPING AT:" + event.x + ", " + event.y);
                     }
                 }
             }
