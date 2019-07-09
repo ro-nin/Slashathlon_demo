@@ -12,7 +12,7 @@ The game was developed by:
   
   Paolo Perrotta - https://github.com/PaoloPerrotta
   
-  Giuseppe Sannino - @jehuty18;
+  Giuseppe Sannino - https://github.com/jehuty18
 
 
 Disclaimer: Free graphic and audio assets were used most of the time, if you find one of your possession and want it removed get in touch.
