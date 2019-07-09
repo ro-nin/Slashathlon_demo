@@ -10,7 +10,7 @@ The game was developed by:
 
   Emanuele Cioffi - @ro-nin;  
   
-  Paolo Perrotta - @PaoloPerrotta;  
+  Paolo Perrotta - https://github.com/PaoloPerrotta
   
   Giuseppe Sannino - @jehuty18;
 
