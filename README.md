@@ -8,7 +8,7 @@ Functionality added to the original framework includes the possibility to draw a
 
 The game was developed by:  
 
-  Emanuele Cioffi - @ro-nin;  
+  Emanuele Cioffi - https://github.com/ro-nin;  
   
   Paolo Perrotta - https://github.com/PaoloPerrotta
   
