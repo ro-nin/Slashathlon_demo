@@ -1,0 +1,110 @@
+{
+  "MapType": "FOREST_M",
+  "Enemies": [
+    {
+      "Type": "A",
+      "Lane": 1,
+      "Row": 10
+    },
+    {
+      "Type": "C",
+      "Lane": 5,
+      "Row": 10
+    },
+    {
+      "Type": "A",
+      "Lane": 3,
+      "Row": 15
+    },
+    {
+      "Type": "A",
+      "Lane": 5,
+      "Row": 20
+    },
+    {
+      "Type": "B",
+      "Lane": 1,
+      "Row": 25
+    },
+    {
+      "Type": "C",
+      "Lane": 5,
+      "Row": 30
+    },
+    {
+      "Type": "A",
+      "Lane": 5,
+      "Row": 35
+    },
+    {
+      "Type": "B",
+      "Lane": 3,
+      "Row": 40
+    },
+    {
+      "Type": "C",
+      "Lane": 1,
+      "Row": 40
+    }
+  ],
+  "Bonus": [
+    {
+      "Type": "Life",
+      "Lane": 3,
+      "Row": 36
+    }
+  ],
+  "Collectibles": [
+    {
+      "Type": "RED GEM",
+      "Lane": 2,
+      "Row": 20
+    },
+    {
+      "Type": "RED GEM",
+      "Lane": 4,
+      "Row": 40
+    },
+    {
+      "Type": "RED GEM",
+      "Lane": 2,
+      "Row": 50
+    }
+  ],
+  "Boss": {
+    "Row": 50,
+    "Health": 3,
+    "Spawns": [
+      {
+        "Type": "C",
+        "Lane": 3,
+        "Row": 60
+      },
+      {
+        "Type": "B",
+        "Lane": 3,
+        "Row": 65
+      },
+      {
+        "Type": "A",
+        "Lane": 3,
+        "Row": 70
+      },
+      {
+        "Type": "B",
+        "Lane": 3,
+        "Row": 75
+      },
+      {
+        "Type": "B",
+        "Lane": 1,
+        "Row": 80
+      },
+      {
+        "Type": "C",
+        "Lane": 5,
+        "Row": 85
+      }
+    ]
+  }
+}
