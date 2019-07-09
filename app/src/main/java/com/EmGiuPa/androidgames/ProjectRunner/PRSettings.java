@@ -6,17 +6,17 @@ public class PRSettings {
 
     public static void setStringSetting(SharedPreferences.Editor editor, String settingKey, String settingValue) {
         editor.putString(settingKey,settingValue);
-        editor.apply(); //Si può usare anche commit(), sulla documentazione c'è scritto che però esegue una operazione sincrona
+        editor.apply();
     }
 
     public static void setIntSetting(SharedPreferences.Editor editor, String settingKey, int settingValue) {
         editor.putInt(settingKey,settingValue);
-        editor.apply(); //Si può usare anche commit(), come sopra
+        editor.apply();
     }
 
     static void setBooleandSetting(SharedPreferences.Editor editor, String settingKey, boolean settingValue) {
         editor.putBoolean(settingKey,settingValue);
-        editor.apply(); //Si può usare anche commit(), come sopra
+        editor.apply();
     }
 
     public static String getStringSetting(SharedPreferences sh, String settingKey) {
@@ -30,7 +30,7 @@ public class PRSettings {
     }
 
     static boolean getBooleanSetting(SharedPreferences sh, String settingKey) {
-        boolean defaultSettingValue = false;
+        boolean defaultSettingValue = true;
         return sh.getBoolean(settingKey, defaultSettingValue);
     }
 }
