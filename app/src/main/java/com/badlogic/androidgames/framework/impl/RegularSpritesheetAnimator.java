@@ -8,9 +8,17 @@ import com.badlogic.androidgames.framework.Graphics;
 
 public class RegularSpritesheetAnimator implements Animator {
 
-    private static int bias = 0;
-
-
+    /**
+     * Draw a looped animation from a spritesheet
+     *
+     * @param g
+     * @param ac        Animated component of the object to draw
+     * @param animation which animation  of the object to play, referenced via state
+     * @param x         where to draw
+     * @param y         where to draw
+     * @param width
+     * @param height
+     */
     public void animate(Graphics g, AnimatedComponent ac, ObjectStateEnum animation, int x, int y, int width, int height) {
         RegularSpritesheet rs = ac.getSpritesheet(animation);
         int totalDuration = ac.getDuration(animation);
@@ -19,7 +27,7 @@ public class RegularSpritesheetAnimator implements Animator {
         int numFrames = rows*cols;
         int frameDuration = totalDuration/numFrames;
         int frame = (int) ((System.currentTimeMillis() / frameDuration) % (numFrames));
-        frame = (frame + bias) %numFrames;
+        frame = (frame ) %numFrames;
         if (rs != null  && numFrames > 0) {
             int col = frame;
             int row = 0;
@@ -34,12 +42,5 @@ public class RegularSpritesheetAnimator implements Animator {
                     (int)rs.getSingleFrameHeight());
         }
     }
-    /*
-    public static void restartFrom(AnimatedComponent ac, ObjectStateEnum animation, int numFrames, int numFrame) {
-        int frame = (int) ((System.currentTimeMillis() / (ac.getDuration(animation)/numFrames) % (numFrames)));
-        bias = (numFrame - frame);
-        if(bias < 0)
-            bias += numFrames;
-    }
-    */
+
 }
