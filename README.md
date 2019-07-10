@@ -14,5 +14,6 @@ The game was developed by:
   
   Giuseppe Sannino - https://github.com/jehuty18
 
+![alt text](https://i.imgur.com/Nsth1L0.png)
 
 Disclaimer: Free graphic and audio assets were used most of the time, if you find one of your possession and want it removed get in touch.
