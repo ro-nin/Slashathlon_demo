@@ -3,6 +3,8 @@ Click on the image for a video preview of the demo.
 
 
 [![Slashathlon video link](https://i.imgur.com/cBjA43s.png)](http://www.youtube.com/watch?v=I0H23J3TGD4 "Slashathlon demo video")
+
+
 An Android game prototype/demo made for Game Design & Development class of 2018/2019 at Università degli Studi di Napoli Federico II.  
 
 The game was developed using and extending the Beginning Android Games framework made for the Mr. Nom game.
