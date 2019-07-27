@@ -1,4 +1,4 @@
-# Slashathlon 1.0
+# Slashathlon Demo
 
 An Android game prototype/demo made for Game Design & Development class of 2018/2019 at Università degli Studi di Napoli Federico II.  
 
